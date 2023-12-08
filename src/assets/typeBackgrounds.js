@@ -17,5 +17,6 @@ const typeBg = {
     dark: "bg-dark",
     steel: "bg-steel",
     fairy: "bg-fairy",
-  };
+};
+
 export default typeBg;
