@@ -43,7 +43,7 @@ function PokemonWindow({ pokemon, setNewPokemon }) {
           setNewPokemon(null);
         }, 1500);
       } else {
-        dispatch(setWarningState("This Pokemon is already in your bag!"));
+        dispatch(setWarningState("This Pokémon is already in your bag!"));
       }
     } else {
       dispatch(setWarningState("Bag is full!"));
@@ -54,7 +54,7 @@ function PokemonWindow({ pokemon, setNewPokemon }) {
     <div className="w-80 md:w-8/12 lg:max-w-screen-md bg-white border-2 border-gray-200 rounded-lg shadow mx-auto">
       <h5 className="flex flex-wrap justify-center md:justify-start text-sm font-medium text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50">
         <span className="p-3 text-lg md:text-xl">
-          New Pokemon Has Appeared!
+          New Pokémon Has Appeared!
         </span>
       </h5>
       <div className="p-3 rounded-b-md md:p-6 bg-forest bg-cover bg-center">
@@ -134,7 +134,7 @@ function PokemonWindow({ pokemon, setNewPokemon }) {
               className="py-2 rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 w-20 mx-3 text-white text-sm font-medium"
               onClick={HandleRun}
               onMouseEnter={() => {
-                dispatch(setWarningState("Run away and leave the Pokemon"));
+                dispatch(setWarningState("Run away and leave the Pokémon"));
               }}
               onMouseLeave={() => {
                 dispatch(resetWarningState());
@@ -146,7 +146,7 @@ function PokemonWindow({ pokemon, setNewPokemon }) {
               className="py-2 rounded-lg bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 w-20 mx-3 text-white text-sm font-medium"
               onClick={() => handleCatch(pokemon)}
               onMouseEnter={() => {
-                dispatch(setWarningState("Catch the Pokemon and add to bag"));
+                dispatch(setWarningState("Catch the Pokémon and add to bag"));
               }}
               onMouseLeave={() => {
                 dispatch(resetWarningState());

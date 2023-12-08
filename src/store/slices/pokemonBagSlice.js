@@ -9,7 +9,7 @@ export const pokemonBagSlice = createSlice({
   reducers: {
     addPokemon: (state, action) => {
       state.value.push(action.payload);
-      state.warning = 'Successfully caught Pokemon and added to Bag';
+      state.warning = 'Successfully caught Pokémon and added to Bag';
     },
     deletePokemon: (state, action) => {
       state.value = state.value.filter(item => item.id !== action.payload);

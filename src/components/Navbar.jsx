@@ -13,7 +13,7 @@ function Navbar() {
       {pageState ? (
         <div className="my-2">
           <span className="text-2xl font-semibold p-3 bg-white border-b border-l border-r border-gray-200 rounded-b-lg shadow">
-            Pokemon In Bag
+            Pokémon In Bag
           </span>
           <Link to="/">
             <button
@@ -27,7 +27,7 @@ function Navbar() {
       ) : (
         <div className="my-2">
           <span className="text-2xl font-semibold p-3 bg-white border-b border-l border-r border-gray-200 rounded-b-lg shadow">
-            Search For Pokemon
+            Search For Pokémon
           </span>
           <Link to="/bag">
             <button

@@ -13,8 +13,8 @@ function BagPage() {
         </div>
       ) : (
         <div className="w-80 bg-white border border-gray-200 rounded-lg shadow mx-auto p-5 text-center mt-10">
-          <p className="font-semibold">No Pokemon Has Been Caught Yet.</p>
-          <p>Go back to the previous page and catch some Pokemon!</p>
+          <p className="font-semibold">No Pokémon Has Been Caught Yet.</p>
+          <p>Go back to the previous page and catch some Pokémon!</p>
         </div>
       )}
     </div>
