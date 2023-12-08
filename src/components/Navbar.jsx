@@ -17,7 +17,7 @@ function Navbar() {
           </span>
           <Link to="/">
             <button
-              className="absolute top-0 end-0 p-3 bg-gray-50 border-b border-l border-gray-200 rounded-bl-lg w-16 font-medium"
+              className="absolute top-0 end-0 p-3 bg-gray-50 border-b border-l border-gray-200 hover:cursor-pointer hover:bg-gray-200 focus:ring-gray-100 focus:border-gray-100 rounded-bl-lg w-16 font-medium"
               onClick={togglePageState}
             >
               Back
@@ -26,12 +26,12 @@ function Navbar() {
         </div>
       ) : (
         <div className="my-2">
-          <span className="text-2xl font-semibold p-3 bg-white border-b border-l border-r border-gray-200 rounded-b-lg shadow">
+          <span className="text-2xl font-semibold p-3 bg-white border-b border-l border-r border-gray-200 focus:ring-gray-100 focus:border-gray-100 rounded-b-lg shadow">
             Search For Pokémon
           </span>
           <Link to="/bag">
             <button
-              className="absolute top-0 end-0 p-3 bg-gray-50 border-b border-l border-gray-200 rounded-bl-lg w-16 font-medium"
+              className="absolute top-0 end-0 p-3 bg-gray-50 border-b border-l border-gray-200 hover:cursor-pointer hover:bg-gray-200 rounded-bl-lg w-16 font-medium"
               onClick={togglePageState}
             >
               Bag

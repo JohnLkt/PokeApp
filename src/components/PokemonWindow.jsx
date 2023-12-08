@@ -93,32 +93,38 @@ function PokemonWindow({ pokemon, setNewPokemon }) {
               <table className="w-full text-sm md:text-md lg:text-lg text-middle">
                 <thead>
                   <tr>
-                    <th className="bg-green-200 w-1/2">Hp</th>
-                    <th className="bg-blue-200 w-1/2">Speed</th>
+                    <th className="bg-green-200 w-1/2 pt-2">Hp</th>
+                    <th className="bg-blue-200 w-1/2 pt-2">Speed</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="odd:bg-white even:bg-gray-50">
                     {stats.hp > 50 ? (
-                      <td className="text-center bg-green-200">{stats.hp}</td>
+                      <td className="text-center bg-green-200 pb-2">
+                        {stats.hp}
+                      </td>
                     ) : (
-                      <td className="text-red-500 font-bold text-center bg-green-200">
+                      <td className="text-red-500 font-bold text-center bg-green-200 pb-2">
                         {stats.hp}
                       </td>
                     )}
-                    <td className="text-center bg-blue-200">{stats.speed}</td>
+                    <td className="text-center bg-blue-200 pb-2">
+                      {stats.speed}
+                    </td>
                   </tr>
                 </tbody>
                 <thead>
                   <tr>
-                    <th className="bg-red-200">Attack</th>
-                    <th className="bg-yellow-200">Defense</th>
+                    <th className="bg-red-200 pt-2">Attack</th>
+                    <th className="bg-yellow-200 pt-2">Defense</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="odd:bg-white even:bg-gray-50">
-                    <td className="text-center bg-red-200">{stats.atk}</td>
-                    <td className="text-center bg-yellow-200">{stats.def}</td>
+                    <td className="text-center bg-red-200 pb-2">{stats.atk}</td>
+                    <td className="text-center bg-yellow-200 pb-2">
+                      {stats.def}
+                    </td>
                   </tr>
                 </tbody>
               </table>
