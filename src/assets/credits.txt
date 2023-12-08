@@ -1,0 +1,4 @@
+type colours are obtained from the Pokémon Fandom Wiki (https://pokemon.fandom.com/wiki/Types)
+battleBg is obtained from a post in the Pokemon Revolution Online Forums (https://pokemonrevolution.net/forum/topic/171529-battle-screen-background/)
+mainBg is obtained from UHD Wallpaper Website (https://image-1.uhdpaper.com/wallpaper/pokemon-legends-arceus-beach-water-type-hd-wallpaper-uhdpaper.com-118@1@f.jpg)
+Pokémon data and sprites are obtained from PokeAPI V2 (https://pokeapi.co/docs/v2#pokemon)
