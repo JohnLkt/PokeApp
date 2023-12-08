@@ -4,7 +4,7 @@ export const pokemonBagSlice = createSlice({
   name: 'pokemonBag',
   initialState: {
     value: [],
-    warning: 'Choose what to do',
+    warning: 'What will you do?',
   },
   reducers: {
     addPokemon: (state, action) => {
@@ -18,7 +18,7 @@ export const pokemonBagSlice = createSlice({
       state.warning = action.payload;
     },
     resetWarningState: (state, ) => {
-      state.warning = 'Choose What To Do';
+      state.warning = 'What will you do';
     }
   },
 })
