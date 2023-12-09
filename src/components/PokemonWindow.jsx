@@ -27,6 +27,7 @@ function PokemonWindow({ pokemon, setNewPokemon }) {
 
     setTimeout(() => {
       setNewPokemon(null);
+      dispatch(resetWarningState());
     }, 1500);
   }
 
