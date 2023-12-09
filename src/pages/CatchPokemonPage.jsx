@@ -4,6 +4,7 @@ import Searchbar from "../components/Searchbar";
 import PokemonWindow from "../components/PokemonWindow";
 import { useSelector, useDispatch } from "react-redux";
 import { setSearchWarning } from "../store/slices/pokemonSearchSlice";
+import InfoBox from "../components/InfoBox";
 
 function CatchPokemonPage() {
   const pokemonSearch = useSelector((state) => state.pokemonSearch.value);
@@ -62,12 +63,12 @@ function CatchPokemonPage() {
             pokemon={newPokemon}
           />
         ) : (
-          <div className="w-80 bg-white border border-gray-200 rounded-lg shadow mx-auto p-5 text-center">
-            <p className="font-semibold">No Pokémon Has Appeared Yet.</p>
-            <p>
-              Type their name or Pokédex ID into the search bar and press enter
-            </p>
-          </div>
+          <InfoBox
+            heading={"No Pokémon Has Appeared Yet."}
+            text={
+              "Type their name or Pokédex ID into the search bar and press enter"
+            }
+          />
         )}
       </div>
     </div>

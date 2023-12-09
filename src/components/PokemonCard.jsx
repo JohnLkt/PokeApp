@@ -14,7 +14,7 @@ function PokemonCard({ pokemon }) {
 
   return (
     <div
-      className={`w-64 bg-white border-2 border-gray-200 rounded-lg shadow ease-in-out duration-300 ${typeBorder[mainType]} hover:cursor-pointer`}
+      className={`w-72 bg-white border-2 border-gray-200 rounded-lg shadow ease-in-out duration-300 ${typeBorder[mainType]} hover:cursor-pointer`}
     >
       <div className="w-full flex flex-wrap justify-start text-sm font-medium text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50">
         <span className="w-full p-2 flex justify-between">

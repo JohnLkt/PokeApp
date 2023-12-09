@@ -12,10 +12,10 @@ function BagPage() {
           ))}
         </div>
       ) : (
-        <div className="w-80 bg-white border border-gray-200 rounded-lg shadow mx-auto p-5 text-center mt-10">
-          <p className="font-semibold">No Pokémon Has Been Caught Yet.</p>
-          <p>Go back to the previous page and catch some Pokémon!</p>
-        </div>
+        <InfoBox
+          heading={"No Pokémon Has Been Caught Yet."}
+          text={"Go back to the previous page and catch some Pokémon!"}
+        />
       )}
     </div>
   );
