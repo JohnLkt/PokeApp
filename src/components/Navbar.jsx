@@ -12,7 +12,7 @@ function Navbar() {
     <div className="flex justify-center mb-8">
       {pageState ? (
         <div className="my-2">
-          <span className="text-2xl font-semibold p-3 bg-white border-b border-l border-r border-gray-200 rounded-b-lg shadow">
+          <span className="text-lg sm:text-2xl font-semibold p-3 bg-white border-b border-l border-r border-gray-200 rounded-b-lg shadow">
             Pokémon In Bag
           </span>
           <Link to="/">
@@ -26,7 +26,7 @@ function Navbar() {
         </div>
       ) : (
         <div className="my-2">
-          <span className="text-2xl font-semibold p-3 bg-white border-b border-l border-r border-gray-200 focus:ring-gray-100 focus:border-gray-100 rounded-b-lg shadow">
+          <span className="text-lg sm:text-2xl font-semibold p-3 bg-white border-b border-l border-r border-gray-200 focus:ring-gray-100 focus:border-gray-100 rounded-b-lg shadow">
             Search For Pokémon
           </span>
           <Link to="/bag">
