@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import InfoBox from "../components/InfoBox";
 import PokemonCard from "../components/PokemonCard";
 
 function BagPage() {
