@@ -26,8 +26,8 @@ function PokemonWindow({ pokemon, setNewPokemon }) {
     dispatch(resetPokemonSearch());
 
     setTimeout(() => {
-      setNewPokemon(null);
       dispatch(resetWarningState());
+      setNewPokemon(null);
     }, 1500);
   }
 
@@ -41,6 +41,7 @@ function PokemonWindow({ pokemon, setNewPokemon }) {
         dispatch(addPokemon(pokemon));
 
         setTimeout(() => {
+          dispatch(resetWarningState());
           setNewPokemon(null);
         }, 1500);
       } else {
